@@ -27,10 +27,10 @@ if not os.path.exists(_U238_ace_path):
     subprocess.run(["frendy", "process_U238.txt"])
     os.chdir(orig_dir)
 
-_ace = pndl.ACE(_U235_ace_path)
+_ace = pndl.ACE(_U238_ace_path)
 _U238 = pndl.STNeutron(_ace)
 
-_ace = pndl.ACE(_U238_ace_path)
+_ace = pndl.ACE(_U235_ace_path)
 _U235 = pndl.STNeutron(_ace)
 
 
